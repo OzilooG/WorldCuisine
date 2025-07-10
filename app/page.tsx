@@ -1,15 +1,10 @@
 import React from "react";
-import Navbar from './Navbar'
+import SimpleMapDisplay from './components/Worldmap'; 
 
 export default function Home() {
   return (
-    
-
     <div>
-      <Navbar>
-        {}
-      </Navbar>
-      
+      <SimpleMapDisplay/>      
     </div>
   );
 }
