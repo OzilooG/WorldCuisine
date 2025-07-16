@@ -428,7 +428,8 @@ var simplemaps_worldmap_mapdata={
       name: "Papua New Guinea"
     },
     PL: {
-      name: "Poland"
+      name: "Poland",
+      url: "/polish_dish"
     },
     KP: {
       name: "Dem. Rep. Korea"
