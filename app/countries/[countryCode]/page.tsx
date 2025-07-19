@@ -82,10 +82,10 @@ export default async function CountryPage({ params }: CountryPageProps) {
     <div className='w-[100vw]'>
         <h1 className='text-3xl text-center'>Dishes from {countryInfo.name} ({countryInfo.code})</h1>
         {dishesForCountry && dishesForCountry.length > 0 ? (
-        <ul className='flex flex-col items-center text-center'>
+        <ul className='flex flex-col items-center text-center gap-5 my-5'>
             {dishesForCountry.map((dish) => (
-            <li key={dish.id} className='flex flex-col items-center'>
-                <h3>{dish.english_name}</h3>
+            <li key={dish.id} className='flex flex-col items-center border-2 rounded p-5'>
+                <h3 className='text-2xl'>{dish.english_name}</h3>
                 {dish.local_name && <p>({dish.local_name})</p>}
                 {dish.description && <p>{dish.description}</p>}
                 {dish.recipe && <p><a href={dish.recipe} target="_blank" rel="noopener noreferrer">View Recipe</a></p>}
