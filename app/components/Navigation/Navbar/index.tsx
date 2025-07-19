@@ -7,16 +7,24 @@ const Navbar = () => {
       <div className="navbar-center">
         <ul className="nav-links">
           <li>
-            <a href="./">Home</a>
+            <Link href="/">
+              Home
+            </Link>
           </li>
           <li>
-            <a href="/discover">Discover</a>
+            <Link href="/discover">
+              Discover
+            </Link>
           </li>
           <li>
-            <a href="/saveddishes">Saved Dishes</a>
+            <Link href="/saveddishes">
+              Saved Dishes
+            </Link>
           </li>
           <li>
-            <a href="/randomizer">Randomizer</a>
+            <Link href="/randomizer">
+              Randomizer
+            </Link>
           </li>
         </ul>
       </div>
