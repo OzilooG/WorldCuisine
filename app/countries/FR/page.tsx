@@ -1,11 +1,11 @@
 'use client';
 import React from 'react';
 
-export default function CIPage() {
+export default function FRPage() {
   return (
     <div>
-      <h1>Ivory Coast</h1>
-      <p>Welcome to the Ivory Coast page!</p>
+      <h1>France</h1>
+      <p>Welcome to the France page!</p>
       <h2>helloretses</h2>
     </div>
   );
