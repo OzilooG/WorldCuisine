@@ -1,11 +1,11 @@
 'use client';
 import React from 'react';
 
-export default function PLPage() {
+export default function TGPage() {
   return (
     <div>
-      <h1>Poland</h1>
-      <p>Welcome to the Poland page!</p>
+      <h1>Togo</h1>
+      <p>Welcome to the Togo page!</p>
       <h2>helloretses</h2>
     </div>
   );
