@@ -158,7 +158,7 @@ var simplemaps_worldmap_mapdata={
       name: "China"
     },
     CI: {
-      name: "Côte d'Ivoire"
+      name: "Ivory Coast"
     },
     CM: {
       name: "Cameroon"
@@ -311,7 +311,7 @@ var simplemaps_worldmap_mapdata={
       name: "Cambodia"
     },
     KR: {
-      name: "Republic of Korea"
+      name: "South Korea"
     },
     XK: {
       name: "Kosovo"
@@ -432,7 +432,7 @@ var simplemaps_worldmap_mapdata={
       url: "/countries/PL"
     },
     KP: {
-      name: "Dem. Rep. Korea"
+      name: "North Korea"
     },
     PT: {
       name: "Portugal"
