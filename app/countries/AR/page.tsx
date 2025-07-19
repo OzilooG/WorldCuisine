@@ -4,9 +4,7 @@ import React from 'react';
 export default function ARPage() {
   return (
     <div>
-      <h1>Argentina</h1>
-      <p>Welcome to the Argentina page!</p>
-      <h2>helloretses</h2>
+      <h1 className="text-center text-5xl">Argentina</h1>
     </div>
   );
 }

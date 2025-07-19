@@ -4,9 +4,7 @@ import React from 'react';
 export default function PEPage() {
   return (
     <div>
-      <h1>Peru</h1>
-      <p>Welcome to the Peru page!</p>
-      <h2>helloretses</h2>
+      <h1 className="text-center text-5xl">Peru</h1>
     </div>
   );
 }

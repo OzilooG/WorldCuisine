@@ -4,9 +4,7 @@ import React from 'react';
 export default function VUPage() {
   return (
     <div>
-      <h1>Vanuatu</h1>
-      <p>Welcome to the Vanuatu page!</p>
-      <h2>helloretses</h2>
+      <h1 className="text-center text-5xl">Vanuatu</h1>
     </div>
   );
 }

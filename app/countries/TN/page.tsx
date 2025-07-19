@@ -4,9 +4,7 @@ import React from 'react';
 export default function TNPage() {
   return (
     <div>
-      <h1>Tunisia</h1>
-      <p>Welcome to the Tunisia page!</p>
-      <h2>helloretses</h2>
+      <h1 className="text-center text-5xl">Tunisia</h1>
     </div>
   );
 }

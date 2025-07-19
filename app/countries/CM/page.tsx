@@ -4,9 +4,7 @@ import React from 'react';
 export default function CMPage() {
   return (
     <div>
-      <h1>Cameroon</h1>
-      <p>Welcome to the Cameroon page!</p>
-      <h2>helloretses</h2>
+      <h1 className="text-center text-5xl">Cameroon</h1>
     </div>
   );
 }

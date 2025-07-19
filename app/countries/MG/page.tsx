@@ -4,9 +4,7 @@ import React from 'react';
 export default function MGPage() {
   return (
     <div>
-      <h1>Madagascar</h1>
-      <p>Welcome to the Madagascar page!</p>
-      <h2>helloretses</h2>
+      <h1 className="text-center text-5xl">Madagascar</h1>
     </div>
   );
 }

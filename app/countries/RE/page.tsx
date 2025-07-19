@@ -4,9 +4,7 @@ import React from 'react';
 export default function REPage() {
   return (
     <div>
-      <h1>Reunion (France)</h1>
-      <p>Welcome to the Reunion (France) page!</p>
-      <h2>helloretses</h2>
+      <h1 className="text-center text-5xl">Reunion (France)</h1>
     </div>
   );
 }

@@ -4,9 +4,7 @@ import React from 'react';
 export default function LAPage() {
   return (
     <div>
-      <h1>Lao PDR</h1>
-      <p>Welcome to the Lao PDR page!</p>
-      <h2>helloretses</h2>
+      <h1 className="text-center text-5xl">Lao PDR</h1>
     </div>
   );
 }

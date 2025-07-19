@@ -4,9 +4,7 @@ import React from 'react';
 export default function ECPage() {
   return (
     <div>
-      <h1>Ecuador</h1>
-      <p>Welcome to the Ecuador page!</p>
-      <h2>helloretses</h2>
+      <h1 className="text-center text-5xl">Ecuador</h1>
     </div>
   );
 }

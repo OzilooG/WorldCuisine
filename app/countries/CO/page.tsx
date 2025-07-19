@@ -4,9 +4,7 @@ import React from 'react';
 export default function COPage() {
   return (
     <div>
-      <h1>Colombia</h1>
-      <p>Welcome to the Colombia page!</p>
-      <h2>helloretses</h2>
+      <h1 className="text-center text-5xl">Colombia</h1>
     </div>
   );
 }

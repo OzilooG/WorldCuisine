@@ -4,9 +4,7 @@ import React from 'react';
 export default function ZAPage() {
   return (
     <div>
-      <h1>South Africa</h1>
-      <p>Welcome to the South Africa page!</p>
-      <h2>helloretses</h2>
+      <h1 className="text-center text-5xl">South Africa</h1>
     </div>
   );
 }

@@ -4,9 +4,7 @@ import React from 'react';
 export default function TLPage() {
   return (
     <div>
-      <h1>Timor-Leste</h1>
-      <p>Welcome to the Timor-Leste page!</p>
-      <h2>helloretses</h2>
+      <h1 className="text-center text-5xl">Timor-Leste</h1>
     </div>
   );
 }

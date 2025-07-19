@@ -4,9 +4,7 @@ import React from 'react';
 export default function SSPage() {
   return (
     <div>
-      <h1>South Sudan</h1>
-      <p>Welcome to the South Sudan page!</p>
-      <h2>helloretses</h2>
+      <h1 className="text-center text-5xl">South Sudan</h1>
     </div>
   );
 }

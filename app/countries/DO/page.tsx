@@ -4,9 +4,7 @@ import React from 'react';
 export default function DOPage() {
   return (
     <div>
-      <h1>Dominican Republic</h1>
-      <p>Welcome to the Dominican Republic page!</p>
-      <h2>helloretses</h2>
+      <h1 className="text-center text-5xl">Dominican Republic</h1>
     </div>
   );
 }

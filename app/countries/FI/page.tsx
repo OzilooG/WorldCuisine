@@ -4,9 +4,7 @@ import React from 'react';
 export default function FIPage() {
   return (
     <div>
-      <h1>Finland</h1>
-      <p>Welcome to the Finland page!</p>
-      <h2>helloretses</h2>
+      <h1 className="text-center text-5xl">Finland</h1>
     </div>
   );
 }

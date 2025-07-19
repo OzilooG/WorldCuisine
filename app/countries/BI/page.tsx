@@ -4,9 +4,7 @@ import React from 'react';
 export default function BIPage() {
   return (
     <div>
-      <h1>Burundi</h1>
-      <p>Welcome to the Burundi page!</p>
-      <h2>helloretses</h2>
+      <h1 className="text-center text-5xl">Burundi</h1>
     </div>
   );
 }

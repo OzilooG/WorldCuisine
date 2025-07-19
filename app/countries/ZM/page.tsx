@@ -4,9 +4,7 @@ import React from 'react';
 export default function ZMPage() {
   return (
     <div>
-      <h1>Zambia</h1>
-      <p>Welcome to the Zambia page!</p>
-      <h2>helloretses</h2>
+      <h1 className="text-center text-5xl">Zambia</h1>
     </div>
   );
 }

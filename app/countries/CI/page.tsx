@@ -4,9 +4,7 @@ import React from 'react';
 export default function CIPage() {
   return (
     <div>
-      <h1>Ivory Coast</h1>
-      <p>Welcome to the Ivory Coast page!</p>
-      <h2>helloretses</h2>
+      <h1 className="text-center text-5xl">Ivory Coast</h1>
     </div>
   );
 }

@@ -4,9 +4,7 @@ import React from 'react';
 export default function MFPage() {
   return (
     <div>
-      <h1>Saint Martin (French)</h1>
-      <p>Welcome to the Saint Martin (French) page!</p>
-      <h2>helloretses</h2>
+      <h1 className="text-center text-5xl">Saint Martin (French)</h1>
     </div>
   );
 }

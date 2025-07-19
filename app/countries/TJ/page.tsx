@@ -4,9 +4,7 @@ import React from 'react';
 export default function TJPage() {
   return (
     <div>
-      <h1>Tajikistan</h1>
-      <p>Welcome to the Tajikistan page!</p>
-      <h2>helloretses</h2>
+      <h1 className="text-center text-5xl">Tajikistan</h1>
     </div>
   );
 }

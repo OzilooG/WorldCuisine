@@ -4,9 +4,7 @@ import React from 'react';
 export default function KMPage() {
   return (
     <div>
-      <h1>Comoros</h1>
-      <p>Welcome to the Comoros page!</p>
-      <h2>helloretses</h2>
+      <h1 className="text-center text-5xl">Comoros</h1>
     </div>
   );
 }

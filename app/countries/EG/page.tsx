@@ -4,9 +4,7 @@ import React from 'react';
 export default function EGPage() {
   return (
     <div>
-      <h1>Egypt</h1>
-      <p>Welcome to the Egypt page!</p>
-      <h2>helloretses</h2>
+      <h1 className="text-center text-5xl">Egypt</h1>
     </div>
   );
 }

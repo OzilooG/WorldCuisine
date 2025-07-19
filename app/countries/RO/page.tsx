@@ -4,9 +4,7 @@ import React from 'react';
 export default function ROPage() {
   return (
     <div>
-      <h1>Romania</h1>
-      <p>Welcome to the Romania page!</p>
-      <h2>helloretses</h2>
+      <h1 className="text-center text-5xl">Romania</h1>
     </div>
   );
 }

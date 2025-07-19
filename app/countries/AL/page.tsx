@@ -4,9 +4,7 @@ import React from 'react';
 export default function ALPage() {
   return (
     <div>
-      <h1>Albania</h1>
-      <p>Welcome to the Albania page!</p>
-      <h2>helloretses</h2>
+      <h1 className="text-center text-5xl">Albania</h1>
     </div>
   );
 }

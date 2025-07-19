@@ -235,9 +235,7 @@ import React from 'react';
 export default function {code}Page() {{
   return (
     <div>
-      <h1>{name}</h1>
-      <p>Welcome to the {name} page!</p>
-      <h2>helloretses</h2>
+      <h1 className="text-center text-5xl">{name}</h1>
     </div>
   );
 }}

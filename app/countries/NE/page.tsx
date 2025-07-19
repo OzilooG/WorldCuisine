@@ -4,9 +4,7 @@ import React from 'react';
 export default function NEPage() {
   return (
     <div>
-      <h1>Niger</h1>
-      <p>Welcome to the Niger page!</p>
-      <h2>helloretses</h2>
+      <h1 className="text-center text-5xl">Niger</h1>
     </div>
   );
 }

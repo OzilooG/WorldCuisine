@@ -4,9 +4,7 @@ import React from 'react';
 export default function PLPage() {
   return (
     <div>
-      <h1>Poland</h1>
-      <p>Welcome to the Poland page!</p>
-      <h2>helloretses</h2>
+      <h1 className="text-center text-5xl">Poland</h1>
     </div>
   );
 }

@@ -4,9 +4,7 @@ import React from 'react';
 export default function CVPage() {
   return (
     <div>
-      <h1>Cape Verde</h1>
-      <p>Welcome to the Cape Verde page!</p>
-      <h2>helloretses</h2>
+      <h1 className="text-center text-5xl">Cape Verde</h1>
     </div>
   );
 }

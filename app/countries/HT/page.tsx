@@ -4,9 +4,7 @@ import React from 'react';
 export default function HTPage() {
   return (
     <div>
-      <h1>Haiti</h1>
-      <p>Welcome to the Haiti page!</p>
-      <h2>helloretses</h2>
+      <h1 className="text-center text-5xl">Haiti</h1>
     </div>
   );
 }

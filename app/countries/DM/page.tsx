@@ -4,9 +4,7 @@ import React from 'react';
 export default function DMPage() {
   return (
     <div>
-      <h1>Dominica</h1>
-      <p>Welcome to the Dominica page!</p>
-      <h2>helloretses</h2>
+      <h1 className="text-center text-5xl">Dominica</h1>
     </div>
   );
 }

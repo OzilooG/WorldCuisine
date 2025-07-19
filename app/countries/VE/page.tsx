@@ -4,9 +4,7 @@ import React from 'react';
 export default function VEPage() {
   return (
     <div>
-      <h1>Venezuela</h1>
-      <p>Welcome to the Venezuela page!</p>
-      <h2>helloretses</h2>
+      <h1 className="text-center text-5xl">Venezuela</h1>
     </div>
   );
 }

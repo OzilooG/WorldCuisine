@@ -4,9 +4,7 @@ import React from 'react';
 export default function BZPage() {
   return (
     <div>
-      <h1>Belize</h1>
-      <p>Welcome to the Belize page!</p>
-      <h2>helloretses</h2>
+      <h1 className="text-center text-5xl">Belize</h1>
     </div>
   );
 }

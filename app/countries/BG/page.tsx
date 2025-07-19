@@ -4,9 +4,7 @@ import React from 'react';
 export default function BGPage() {
   return (
     <div>
-      <h1>Bulgaria</h1>
-      <p>Welcome to the Bulgaria page!</p>
-      <h2>helloretses</h2>
+      <h1 className="text-center text-5xl">Bulgaria</h1>
     </div>
   );
 }

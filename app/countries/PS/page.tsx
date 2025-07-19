@@ -4,9 +4,7 @@ import React from 'react';
 export default function PSPage() {
   return (
     <div>
-      <h1>Palestine</h1>
-      <p>Welcome to the Palestine page!</p>
-      <h2>helloretses</h2>
+      <h1 className="text-center text-5xl">Palestine</h1>
     </div>
   );
 }

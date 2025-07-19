@@ -4,9 +4,7 @@ import React from 'react';
 export default function CLPage() {
   return (
     <div>
-      <h1>Chile</h1>
-      <p>Welcome to the Chile page!</p>
-      <h2>helloretses</h2>
+      <h1 className="text-center text-5xl">Chile</h1>
     </div>
   );
 }
