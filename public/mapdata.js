@@ -429,7 +429,7 @@ var simplemaps_worldmap_mapdata={
     },
     PL: {
       name: "Poland",
-      url: "/polish_dish"
+      url: "/countries/PL"
     },
     KP: {
       name: "Dem. Rep. Korea"
