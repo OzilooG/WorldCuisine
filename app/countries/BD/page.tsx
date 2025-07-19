@@ -1,11 +1,11 @@
 'use client';
 import React from 'react';
 
-export default function PLPage() {
+export default function BDPage() {
   return (
     <div>
-      <h1>Poland</h1>
-      <p>Welcome to the Poland page!</p>
+      <h1>Bangladesh</h1>
+      <p>Welcome to the Bangladesh page!</p>
       <h2>helloretses</h2>
     </div>
   );
