@@ -40,18 +40,7 @@ const SimpleMapDisplay: React.FC = () => {
         strategy="afterInteractive"
       />
       <div
-  id="map"
-  className="
-    my-10
-    h-[90vh]
-    md:h-[70vh]
-    overflow-auto
-    touch-pan-x
-    touch-pan-y
-    mx-auto
-    border border-gray-200 
-  "
-/>
+  id="map"/>
 
     </>
   );
