@@ -85,6 +85,8 @@ export default async function CountryPage({ params }: CountryPageProps) {
         <ul className='flex flex-col items-center text-center gap-5 my-5'>
             {dishesForCountry.map((dish) => (
             <li key={dish.id} className='flex flex-col items-center border-2 rounded p-5'>
+                <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>Save Dish</button>
+
                 <h3 className='text-2xl'>{dish.english_name}</h3>
                 {dish.local_name && <p>({dish.local_name})</p>}
                 {dish.description && <p>{dish.description}</p>}
