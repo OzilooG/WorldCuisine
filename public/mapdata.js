@@ -24,7 +24,7 @@ var simplemaps_worldmap_mapdata={
     location_url: "",
     location_size: 25,
     location_type: "square",
-    location_image_source: "frog.png",
+    location_image_source: "",
     location_border_color: "#FFFFFF",
     location_border: 2,
     location_hover_border: 2.5,
@@ -36,7 +36,7 @@ var simplemaps_worldmap_mapdata={
     label_hover_color: "#d5ddec",
     label_size: 22,
     label_font: "Arial",
-    hide_labels: "no",
+    hide_labels: "yes",
    
     //Zoom settings
     zoom: "yes",
@@ -67,7 +67,8 @@ var simplemaps_worldmap_mapdata={
     link_text: "View Recipes",
     state_image_url: "",
     state_image_position: "",
-    location_image_url: ""
+    location_image_url: "",
+    manual_zoom: "yes"
   },
   state_specific: {
     "AF": {
