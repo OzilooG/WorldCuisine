@@ -1,6 +1,8 @@
+
 import React from 'react';
 import path from 'path';
 import { promises as fs } from 'fs';
+import SaveDishButton from '../../components/Cookies/index'; // adjust the path as needed
 
 interface Dish {
     id: string; 
@@ -85,6 +87,7 @@ export default async function CountryPage({ params }: CountryPageProps) {
         <ul className='flex flex-col items-center text-center gap-5 my-5'>
             {dishesForCountry.map((dish) => (
             <li key={dish.id} className='flex flex-col items-center border-2 rounded p-5'>
+                <SaveDishButton dishId={dish.id} />
                 <h3 className='text-2xl'>{dish.english_name}</h3>
                 {dish.local_name && <p>({dish.local_name})</p>}
                 {dish.description && <p>{dish.description}</p>}
