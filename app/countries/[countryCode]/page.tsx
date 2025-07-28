@@ -2,7 +2,7 @@
 import React from 'react';
 import path from 'path';
 import { promises as fs } from 'fs';
-import SaveDishButton from '../../components/Cookies/index'; // adjust the path as needed
+import SaveDishButton from '../../components/Cookies/index'; 
 
 interface Dish {
     id: string; 
