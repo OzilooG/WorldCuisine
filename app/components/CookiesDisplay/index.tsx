@@ -57,13 +57,15 @@ const SavedDishes: React.FC<SavedDishesProps> = ({ allDishes }) => {
 
   return (
     <div className='w-[100vw]'>
-      <h1 className='text-3xl text-center'>Saved Dishes</h1>
+      
       {savedDishes.length > 0 ? (
         <ul className='flex flex-col items-center text-center gap-5 my-5'>
           {savedDishes.map((dish) => (
             <li key={dish.id} className='flex flex-col items-center border-2 rounded p-5'>
               <h3 className='text-2xl'>{dish.english_name}</h3>
-                <RemoveDishButton dishId={dish.id}/>
+                <RemoveDishButton dishId={dish.id} onRemove={function (dishId: string): void {
+                throw new Error('Function not implemented.');
+              } }/>
                 {dish.local_name && <p>({dish.local_name})</p>}
                 {dish.description && <p>{dish.description}</p>}
                 {dish.recipe && <p><a href={dish.recipe} target="_blank" rel="noopener noreferrer">View Recipe</a></p>}
@@ -74,7 +76,7 @@ const SavedDishes: React.FC<SavedDishesProps> = ({ allDishes }) => {
           ))}
         </ul>
       ) : (
-        <p>No saved dishes yet.</p>
+        <p className="text-center">No saved dishes yet.</p>
       )}
     </div>
   );
