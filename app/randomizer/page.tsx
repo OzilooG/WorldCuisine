@@ -88,7 +88,7 @@ export default function Randomizer() {
 
   const handleSave = () => {
     if (random_dish) {
-      Cookies.set(`savedDish_${random_dish.id}`, 'true', { expires: 365 });
+      Cookies.set(`savedDish_${random_dish.id}`, 'true');
       setIsSaved(true);
       alert('Dish saved!');
     }
@@ -158,7 +158,7 @@ export default function Randomizer() {
               </div>
           )}
 
-          {/* 👇 Save Dish Button or Message */}
+          
           <div className="mt-6">
             {isSaved ? (
               <p className="text-green-600 font-semibold">✓ Dish already saved</p>
