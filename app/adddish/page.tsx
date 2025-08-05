@@ -221,9 +221,9 @@ export default function FormPage() {
             "utensils",
             "drink",
             "ingredients",
-            "more_details",
+            "description",
           ].map((field) =>
-            ["more_details"].includes(field) ? (
+            ["description"].includes(field) ? (
               <textarea
                 key={field}
                 name={field}

@@ -1,8 +1,8 @@
 // app/components/index.tsx
-'use client';
+"use client";
 
-import React, { useEffect, useState } from 'react';
-import Cookies from 'js-cookie';
+import React, { useEffect, useState } from "react";
+import Cookies from "js-cookie";
 
 interface SaveDishButtonProps {
   dishId: string;
@@ -13,24 +13,21 @@ const SaveDishButton: React.FC<SaveDishButtonProps> = ({ dishId }) => {
 
   useEffect(() => {
     const saved = Cookies.get(`savedDish_${dishId}`);
-    if (saved === 'true') {
+    if (saved === "true") {
       setIsSaved(true);
     }
   }, [dishId]);
 
   const handleSave = () => {
-    Cookies.set(`savedDish_${dishId}`, 'true'); 
+    Cookies.set(`savedDish_${dishId}`, "true");
     setIsSaved(true);
-    alert('Dish saved!');
+    alert("Dish saved!");
   };
 
   return isSaved ? (
-    <p className="text-green-600 font-semibold">Dish already saved</p>
+    <p className="text-secondary font-semibold">Dish already saved</p>
   ) : (
-    <button
-      onClick={handleSave}
-      className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-    >
+    <button onClick={handleSave} className="btn">
       Save Dish
     </button>
   );

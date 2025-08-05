@@ -1,9 +1,8 @@
 "use client";
 
-import { useState, useEffect } from "react"; 
-import SaveDishButton from '../components/Cookies/index'; 
-import Cookies from "js-cookie"; 
-
+import { useState, useEffect } from "react";
+import SaveDishButton from "../components/Cookies/index";
+import Cookies from "js-cookie";
 
 interface Dish {
   id: string;
@@ -47,7 +46,7 @@ export default function Randomizer() {
   useEffect(() => {
     const fetchDishes = async () => {
       try {
-        const response = await fetch('/data/worlddishes.json');
+        const response = await fetch("/data/worlddishes.json");
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -68,7 +67,7 @@ export default function Randomizer() {
   useEffect(() => {
     if (random_dish) {
       const saved = Cookies.get(`savedDish_${random_dish.id}`);
-      setIsSaved(saved === 'true');
+      setIsSaved(saved === "true");
     }
   }, [random_dish]);
 
@@ -88,9 +87,9 @@ export default function Randomizer() {
 
   const handleSave = () => {
     if (random_dish) {
-      Cookies.set(`savedDish_${random_dish.id}`, 'true');
+      Cookies.set(`savedDish_${random_dish.id}`, "true");
       setIsSaved(true);
-      alert('Dish saved!');
+      alert("Dish saved!");
     }
   };
 
@@ -100,13 +99,15 @@ export default function Randomizer() {
 
   return (
     <div>
-      <h1 className="text-3xl font-bold mb-4 flex flex-col items-center">Dish Randomizer</h1>
+      <h1 className="mt-15 text-3xl font-bold mb-4 flex flex-col items-center">
+        Dish Randomizer
+      </h1>
 
-      <form onSubmit={generateRandomDish} className="mb-8 flex flex-col items-center">
-        <button
-          type="submit"
-          className="px-6 py-3 bg-green-800 text-white rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition duration-300"
-        >
+      <form
+        onSubmit={generateRandomDish}
+        className="mb-8 flex flex-col items-center"
+      >
+        <button type="submit" className="px-6 py-3 btn">
           Get Random Dish
         </button>
       </form>
@@ -135,7 +136,7 @@ export default function Randomizer() {
                 href={random_dish.recipe}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 hover:underline font-medium"
+                className="btn"
               >
                 View Recipe
               </a>
@@ -148,7 +149,7 @@ export default function Randomizer() {
                   src={random_dish.public_cc_image_url}
                   alt={random_dish.public_cc_image_caption}
                   className="max-w-full h-auto rounded-lg shadow-sm"
-                  style={{ maxWidth: '400px' }}
+                  style={{ maxWidth: "400px" }}
                 />
                 {random_dish.public_cc_image_caption && (
                   <p className="text-sm text-gray-500 mt-2">
@@ -156,19 +157,15 @@ export default function Randomizer() {
                   </p>
                 )}
               </div>
-          )}
+            )}
 
-          
           <div className="mt-6">
             {isSaved ? (
-              <p className="text-green-600 font-semibold">✓ Dish already saved</p>
+              <p className="text-green-600 font-semibold">
+                ✓ Dish already saved
+              </p>
             ) : (
-              <button
-                onClick={handleSave}
-                className="mt-2 px-4 py-2 bg-blue-500 text-white font-bold rounded hover:bg-blue-700 transition"
-              >
-                Save Dish
-              </button>
+              <SaveDishButton dishId={random_dish.id} />
             )}
           </div>
         </div>

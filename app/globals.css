@@ -1,55 +1,26 @@
 @import "tailwindcss";
 
 :root {
-  --background: #F3E8EE;
-  --foreground: #F3E8EE;
+  --primary: #b07267;
+  --textcolour: #100908;
+  --background: #fcfafa;
+  --secondary: #7db382;
+  --accent: #7bbaa9;
 }
 
 @theme inline {
   --color-background: var(--background);
-  --color-foreground: var(--foreground);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #F3E8EE;
-    --foreground: #F3E8EE;
-  }
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
 }
 
 body {
   background: var(--background);
-  color: #000;
+  color: var(--textcolour);
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
-.navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #333;
-  color: #fff;
-  padding: 1rem;
-  margin-bottom: 20px;
-}
-
-.navbar-center .nav-links {
-  list-style-type: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar-center .nav-links li {
-  margin-right: 1rem;
-}
-
-.navbar-center .nav-links a {
-  color: #fff;
-  text-decoration: none;
-}
 
 #map_access {
   display: hidden !important;
@@ -63,4 +34,53 @@ body {
   #map_inner {
     transform: none;
   }
+}
+
+.btn {
+  text-align: center;
+  border-radius: 8px;
+  padding: 8px 15px;
+  color: var(--color-background);
+  background-color: var(--color-primary);
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--color-accent);
+}
+
+.dish-card {
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  gap: 10px;
+  width: 290px;
+  height: 400px;
+}
+
+.dish-card > h2 {
+  color:#b07267;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.dish-card > * {
+  flex-grow: 0;
+}
+
+.dish-card > img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.dish-image-container {
+  height: 200px;
+  width: 200px;
+  align-self: center;
+  overflow: hidden;
 }

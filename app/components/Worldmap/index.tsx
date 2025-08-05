@@ -39,9 +39,7 @@ const SimpleMapDisplay: React.FC = () => {
         src="/mapdata.js"
         strategy="afterInteractive"
       />
-      <div
-  id="map"/>
-
+      <div id="map" />
     </>
   );
 };
