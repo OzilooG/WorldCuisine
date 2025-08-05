@@ -26,6 +26,11 @@ const Navbar = () => {
               Randomizer
             </Link>
           </li>
+          <li>
+            <Link href="/adddish">
+              Add Dish
+            </Link>
+          </li>
         </ul>
       </div>
       

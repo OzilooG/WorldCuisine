@@ -45,7 +45,8 @@ interface CountryPageProps {
 
 // Server component which fetches and renders data
 export default async function CountryPage({ params }: CountryPageProps) {
-    const { countryCode: countryCodeParam } = params; // Destructure and rename
+    const resolvedParams = await params;
+    const { countryCode: countryCodeParam } = resolvedParams; // Destructure and rename
     const countryCode = countryCodeParam.toUpperCase(); // Uppercase for lookup
 
     const filePath = path.join(process.cwd(), 'public', 'data', 'worlddishes.json');

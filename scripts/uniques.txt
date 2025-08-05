@@ -1,0 +1,1071 @@
+Unique times of day:
+anytime
+breakfast
+dinner
+lunch
+other
+snack
+
+Unique types of dishes:
+Dessert
+Main dish - eaten with sides
+Main dish - stand alone (e.g. one pot meal)
+Other
+Salad
+Sauce
+Side dish
+Small plate / bowl for sharing
+Small plate / bowl served as a part of a collection
+Soup
+Starter
+dessert
+side_dish
+starter
+
+Unique types of occasions:
+both
+regular
+special
+
+Unique types of ingredients:
+"le secret" (a cameroonian spice mix consisting of round african nutmeg
+acar
+achi
+achu spice
+active dry yeast
+active dry yeast (levure de boulanger)
+adzuki bean
+african pepper (pebe)
+agar-agar
+ajwa seeds
+akparata seed
+all-purpose flour
+allspice
+almond
+almond oil
+alt
+amaranth
+amasi
+ammonia
+and others)
+and/or others)
+andouille sausage
+ants
+apple
+apricot jam
+arachide
+argan oil
+arish potatoes
+arrow roots
+artichoke
+ash (cromwo tree)
+asian (eg. chinese mustard leaves or 芥菜)
+asparagus
+aspic
+assorted meat
+atama leaves
+atchar
+aubergine
+avocado
+bacon
+bacon grease
+baked beans
+baked crust
+baking powder
+baking soda
+balck pepper
+balsamic vinegar
+bambara nuts
+bamboo shoot
+banana
+banana blossoms
+banana flower
+banana heart
+banana leaf
+bananaleaf
+barley
+basil
+bay leaf
+bay leaves
+bean leaves
+beancurd
+beans
+beans: dry red beans
+beef
+beef cube
+beef liver cubed
+beef meat
+beef patty
+beef shank
+beef stripes
+beef tripe
+beeswax
+beetroot
+beignet : warm water
+bell pepper
+berkoukes
+besan flour
+biltong
+biscuits
+biteku-teku (amaranth leaves)
+bitter guard
+bitter leaf
+bitter melon
+black african pepper
+black bean
+black beans
+black eyed pea
+black eyed peas
+black lentil
+black nightshade
+black olive
+black pepper
+black pudding
+black tea
+black-eyed peas (koki)
+blended beans or lentils
+blended fresh pepper (more or less
+blended fresh pepper without tomatoes
+blood
+boerewors
+boiled french peas
+boiled irish potatoes
+boiling water
+bok choy
+bonito flakes
+boondi
+bottle gourd
+bouillie(pap): fermented corn dough
+bouillon cubes
+bouillon cubes (your maggi
+bouquets of fresh lalo leaves (or kelen kelen) or dried leaves
+bracken fern
+braised maize
+brandy
+bread
+bread crumbs
+breadfruit
+broth
+brown rice
+brown sugar
+bulgur
+bunch of fresh parsley
+bunches of foléré
+burdock
+bush okra
+butter
+buttermilk
+cabbage
+cake flour
+calamansi
+calf feet
+calf head
+calçot
+camel hump
+camel meat
+canned tomato
+capers
+capsicums
+caramel sauce
+caramelised pepper sauce
+caramelized
+caramolised onion
+cardamom
+cardamom pods
+cardmaon
+cardomon
+carmon powder
+carp
+carrot
+carrots
+casava
+case of seasoning
+cashew
+cassava
+cassava dough
+cassava flour
+cassava leave
+cat fish
+caul fat
+cauliflower
+cauliflower cheese
+caviar
+cayenne pepper
+caçava flour
+celery
+celery stalk
+cellophane noodles
+cendol
+chapatti
+chardon
+chayote
+cheddar cheese
+cheese
+chestnut
+chicken
+chicken feet
+chicken intestines
+chicken neck
+chicken stock
+chickpea
+chickpea flour
+chickpeas
+chikuwa
+chikuwa (japanese fish paste cake)
+chili
+chili (bhut jolokia or ghost pepper)
+chili (bird's eye)
+chili beef
+chili pepper
+chili powder
+chilli
+chilli pepper
+chillis
+chillli
+chinese chives
+chinsaga/saget leaves
+chips
+chives
+chives stem
+chocolate powder
+chocolate sprinkles
+chocolate syrup
+chopped coriander
+chopped coriander leaves
+chopped efinrin leaves (optional but recommended)
+chopped onion
+chubritsa
+cilantro
+cilantro (coriander leaves)
+cinamon
+cinnamon
+cinnamon sticks
+clarified butter (ghee)
+clear water
+cleome
+clous de girofle
+clove
+cloves
+coariander leaves
+cocoa powder
+coconut cream
+coconut flesh
+coconut milk
+coconut oil
+coconut water
+cocoyam
+cocoyam leaves
+cocoyam leaves or spinach - chopped
+cod
+collard green
+colocasia
+condensed milk
+confectioners' sugar
+contri onion
+cooking fat
+cooking oil
+cooled blood
+corainder leaves
+corchorus
+coriander
+coriander leaves
+coriander powder
+coriander seed
+corianer powder
+corn
+corn dough
+corn flower
+cornflour
+cornmeal
+cornstarch
+country onions
+country potato
+courgette
+couscous
+covo vegetables
+cow fat
+cow head meat
+cow heels
+cow intestine
+cowpea leaves
+crab
+crawfish
+crayfish
+crayfish or smoked fish or smoked meat
+cream
+creole mustard
+crown daisy
+crushed biscuits
+crushed dry fish
+crushed garlic
+crushed ginger
+crushed maize
+crushed red pepper
+crushed soumbala
+cucumber
+cumin
+cup vegetable oil
+curd
+cured ham
+curried mince
+curry
+curry leaves
+curry leavessalt
+curry powder
+curry poweder
+custard
+custard powder
+daikon
+dairy milk
+dalan or tchoukkori
+dandelion leaf
+dark leafy greens
+dashi (soup made from kombu seaweed
+date
+dehulled maize
+dehydrated beef broth
+dende oil
+depending on your palate)
+desiccated coconut
+diepse'eh
+dijon mustard
+djama djama
+djansan grains
+djansang
+double concentrated tomato
+dough
+dried apricots
+dried basil
+dried beef sausage
+dried chili
+dried crayfish
+dried fruits
+dried leaves and flowers
+dried meat
+dried moringa
+dried oregano
+dried rose
+dried sardines
+dried shrimp
+dried strips of daikon radish
+dried/smoked fish
+droëwors
+drumstick leaves
+dry ash
+dry cassava
+dry fish
+dry pasta
+dryred chilli
+duck
+dyoul
+edam cheese
+egg
+egg white
+eggplant
+eggplants
+eggs
+eggs (chicken)
+eggs (duck)
+egusi
+elephant yam
+enoki mushroom
+eru/ukazi
+etc.)
+ewe milk
+extra virgin olive oil
+farmers cheese
+fava bean
+fench fries
+fennel
+fenugreek
+fermented bamboo shoots
+fermented milk
+feuille d'odzom
+filé powder
+finger millet flour
+finger millet powder
+fish
+fish ball
+fish cake
+fish of your choice (tilapia
+fish sauce
+fish stock
+flour
+fois
+freekeh
+fresh corn
+fresh cow blood
+fresh meat
+fresh milk
+fresh tomatoes
+fresh yeast
+freshwater fish (eg. catfish
+fried crab
+fried crawfish
+fried fish
+fried onion
+fried oyster
+fried shrimp
+fried tofu
+frog legs
+frozen spinach
+fruits
+fruits of lep)
+full cream milk
+galangal
+game meat
+ganmo (fried tofu)
+garam masala
+garden egg
+garli
+garlic
+garlic and ginger paste
+garlic cloves
+garlic paste
+garri
+gelatin
+gem squash
+ghee
+giardiniera
+giner
+ginger
+ginger paste
+ginger root
+gingerpaste
+glutinous rice
+gnuts
+goat
+goat butter
+goat cheese
+goat leg
+goat meat
+goat milk
+gobe
+gourami
+gourami fish
+goya
+graham crackers
+graine de cornilles
+gram flour
+grasshoppers
+grated coconut
+grated cocoyam
+grated mountain cheese
+gravy
+greek yogurt
+green bananas
+green bean
+green bell pepper
+green capsicum
+green chilies
+green chilli
+green condiments
+green lentil
+green olive
+green onion
+green onion sprigs
+green onion stalk
+green onion stem
+green pepper
+green peppers
+green seasoning
+green tea
+grilled tofu
+grinded yam peels
+ground
+ground beef
+ground cardamom
+ground cardamon
+ground cinammon
+ground coffee
+ground dried okra
+ground nutmeg
+ground nutmeg vegetable oil
+ground pebe
+ground squash
+grounded beans powder
+groundnut
+groundnut flour
+groundnut oil
+gruyere
+habanero pepper
+halva
+ham hock
+hardboiled eggs
+hash browns
+hazelnut
+heart
+heavey cocnut milk
+heavy coconut milk
+heavy cream
+hemp seed
+hing
+hiomi(bark of garlic tree)
+hoisin sauce
+hollowed half loaf of white bread
+homemade green seasoning
+honey
+honey beans ( ewa oloyin )
+horse mackerel fish
+hot sauce
+hummus
+ice
+ice cream
+iceberg lettuce
+idly rice
+ihlaba leaves
+imitation crab
+indian spice
+indomie noodles
+instant yeast
+intestines
+irish potato
+jackfruit
+jackfruit seed
+jackfruit seed cover
+jaggery
+jalapeño pepper
+japanese leek
+japanese mustard
+jasmine rice
+jeera samba rice
+jerk seasoning
+jugo beans
+jumbo shrimp
+jumbo shrimp cube
+jute leaf
+jute leave
+kaffir lime
+kaffir lime leaves
+kanda
+kanwan
+kecap manis
+kechup
+ketchup
+kidney
+kidney bean
+kidneys
+kirsch schnaps
+knorr etc)
+kombu seaweed
+koobi
+kpomo
+kuka powder
+kuli kuli
+l'huile
+laid (cassava leaves)
+lamb
+lamb meat
+lamb mince
+lard
+large onion
+large piece of ginger
+large red pepper
+lavash bread / dough
+lavender
+leek
+leeks
+leg of lamb
+lemon
+lemon juice
+lemon zest
+lemongrass
+lemongrass leaves.
+lentil flour
+lentils
+lepka'ah
+lettuce
+light  coconut milk
+light coconut milk
+lime
+lime juice
+liver etc.)
+liver spread
+lobster
+locust beans
+lom nkak (afrostyrax lepidophyllus)
+lukewarm water
+mabele maize meal
+mabuyu/baobab seeds
+macabo leaves
+mackerel...)
+maggi
+maize
+maize carnal
+maize flour
+maize meal
+maizena
+mala
+malakwang plant
+managu
+mandjanga (dried shrimp)
+mango
+mango chutney
+mascarpone cheese
+matembele
+matooke
+matzah
+mayebo (dried black mushrooms)
+mayonnaise
+mayonnaise homemade green seasoning (optional)
+mbinzo (dried and smoked caterpillars)
+mbongo
+meadow sweet
+meat
+meat/fish of choice(beef skin/canda
+meet
+mejenga leaves
+mejenga seeds
+melam (small fruits related to pepper)
+melon
+melon seeds
+mendak (seeds of monodora myristica)
+mielie meal
+mielies
+milk
+milk chocolate
+milk powder
+millet
+millet flour
+minced meat
+minced tuna
+mint
+mirin
+mitsuba (japanese parsley)
+mixed fruit
+mixed offal (tripe
+moi moi leaf plant (thaumatococcus danielli)
+mopane worms
+morogo
+mortadella
+mosquito plant
+mozzarella cheese
+mrs balls chutney
+msg
+msherekha
+muffuletta bread
+mung bean
+musca
+mushroom
+mustard
+mustard seeds
+mutton
+myrtus
+nata de coco
+natural yoghurt
+nderema leaves
+ndole leaves
+nestle caramel treat
+nestle peppermint crisp (south african)
+neutral oil
+nga'lomsi (roots of monodora myristica)
+nga'nà
+nixtamalized corn flour
+nkui stems (bark of triumfetta pentandra)
+non-frozen bunches of sorrel
+noodles
+nsà nshu (small fruits related to pepper)
+nsù'nflù (fragments of a grayish twisted root)
+ntshop (ash lye or vinegar)
+nutmeg
+nuts
+nutsedge
+o fhuihu (small reddish roots)
+oat bran
+offal (gizzard)
+offal (heart)
+offal (kidney)
+offal (liver)
+offal (tripe)
+ognon
+oha leaf
+oil
+okok leaves
+okpei
+okra
+old bread
+olive oil
+olive salad
+olom or hiomi (bark of the garlic tree/scorodophloeus zenkeri)
+omena
+onion
+onionfresh tomatoes
+onions
+or spinach leaves.
+orange
+orange water
+oregano
+orpine
+over-ripe plantain
+ox tail
+oxtail
+oyster sauce
+pahadi nimbu
+palm fruits
+palm nuts
+palm oil
+palm sap
+palmnut
+pandan extract
+pap
+papaya
+pappaya
+paprika
+paprika (for coloring)
+parsley
+parsley sprigs
+passion fruit
+pea
+peach
+peanut
+peanut butter
+peanut paste
+peanut powder
+peanuts
+pearl onions
+pearl spot fish
+pebe
+pecan
+pectin
+peperoncini
+pepper
+pepper mix
+peppercorn
+peppers
+periwinkle
+pesto
+phyllo pastry
+pickle
+piece of ginger
+pieces of oxtail
+pig ear
+pig feet
+pig head
+pig snout
+pigeon or gungo peas
+pilau mix spice
+piment
+pinch of spices
+pineapple
+pistachio
+pizza crust
+pizza sauce
+plaice (fish)
+plain flour
+plantain
+plantain leaves
+plantains (not too ripe)
+plum
+poi
+poirreau
+polony
+polvilho flour
+ponmo
+poppy seeds
+pork
+pork chops
+pork neck
+pork sausages
+pork shank
+pork shoulder
+pork trotter
+potash
+potato
+potato chips
+potato starch
+potatoes
+pounded yam
+powdered crayfish
+po’ boy bread (new orleans french bread)
+prawn
+provincial herb
+provolone cheese
+prunes
+puff pastry
+puff puff
+pumpkin
+pumpkin leaves
+pumpkin leaves/spinach
+pure icing sugar
+pèbè seeds
+pébé
+quail
+quarter loaf of bread
+rabbit
+raisins
+rama (kenaf leaf)
+ras el hanout
+raw bananas
+rechta noodles
+red bell peeper
+red capsicum
+red chiili
+red chiili flakes
+red chili paste
+red chilli
+red chilli powder
+red kidney beans
+red pepper
+red peppers
+red sorghum
+red sorghum flour
+red wine
+regular yogurt
+reosemary
+rice
+rice flour
+rice vermicelli
+rice vinegar
+rice wine
+riz cassé
+roasted fish
+roasted peanut paste
+robot peppers
+rock salt
+romesco sauce
+rondelle seeds
+rose water
+rosemary
+rutabaga
+saffron
+saffron threads
+sago
+sake (japanese rice wine)
+salad
+salad oil
+salami
+salmon
+salt
+salt & pepper
+salted and roasted peanuts
+salted fish (cured or dried)
+saly
+sambal
+samosa
+samp
+sandwich
+sansho bud (japanese pepper bud)
+sardines
+sausage
+scent leaf
+scotch bonnet
+sea bass
+seafood
+seasoning
+seasoning cube
+seasoning cubes
+seasoning oil
+seaweed
+sel
+self-raising flour
+semo vita
+semolina
+semolina powder
+sesame
+sesame oil
+shaki
+shallot
+shallots
+shea butter
+sheep fat
+shellfish
+shichimi (seven flavours)
+shiitake mushroom
+shiitake mushrooms
+shirataki (noodles made from the starch of konjac)
+shrimp
+shrimp paste
+sides
+simple syrup
+sisieu
+skimmed milk
+slap chips
+small green eggplants
+smetana (eastern europe sour cream)
+smoke
+smoked fish
+smoked fish ( shredded )
+smoked green bananas
+smoked ham
+smoked mackerel
+smoked salmon
+smoked shrimp broth
+smoked tilapia
+smoked turkey rumps
+snails
+snails (escargot)
+snakehead fish
+snakehead)
+snoek
+soba noodles
+soda water
+sodium nitrate
+soft maize
+soh (capsicum frutescens)
+sorghum
+sorrel (frozen)
+sotet
+soumbala
+sour milk
+south african coconut tennis biscuits
+soy milk
+soy sauce
+soya spices
+soyabean
+soybean oil
+spaghetti
+spiced peanut butter
+spices
+spices (ngachu'u
+spinach
+spinach/waterleaf
+split pea fritters
+sponge cake (day old)
+sprig thyme
+spring onion
+spring roll
+spring roll wrapper
+sprouted finger millet flour
+spätzle
+squash
+squid
+sriracha
+steak
+sticky rice
+stock
+stocked fish
+stockfish
+strawberry essence
+string
+submarine sandwich breadroll
+suckling pig
+sugar
+sugar beans
+sugar syrup
+sukuma wiki
+sundried tomato
+sunflower oil
+suya spice
+sweet basil
+sweet beans (honey beans)
+sweet corn
+sweet paprika
+sweet pepper
+sweet peppers
+sweet potato
+sweet potato leaves
+sweet soy sauce
+sweets
+swiss cheese
+syrup
+sô (wild pepper)
+sùsùe (local eggplants)
+tallow
+tamarind
+tamarind (paste or pulp)
+tapioca
+tapioca flour
+taro leaves
+tchobi
+teaspoon
+teaspoon ground nutmeg
+teff flour
+tempeh
+tender coconut pieces
+tender coconut water
+tender jackfruit
+termite
+the bark of lep
+thick coconut milk
+thyme
+tinned tomatoes
+tlitli
+toasted bread
+toasted white rice
+toddy/palm wine
+tofu
+tomato
+tomato kethup
+tomato paste
+tomato relish
+tomato sauce
+tomatoes
+tomatoes and onions
+tongue
+top of palm tree
+tortilla
+tough chicken
+tripe
+tshii (small dried brown fruits)
+tshùtshe (fruit of tetrapleura tetraptera)
+tumeric
+tumeric powder
+tuna
+turkey
+turmeric
+turmeric (for coloring)
+turmeric powder
+turnip
+ube
+udon noodles
+ugba
+ugu
+ukwa seed
+ukwaju/tamarind
+unripe mangoes
+uziza leaf
+vacherin
+vanilla
+vanilla essence
+vanilla extract
+veal
+vegetable oil
+vegetable shortening
+vegetable/olive oil
+vegetables
+venison
+vermicelli
+vhugonyagonya
+vinegar
+walnut
+wasabi
+water
+water (including meat cooking juice)
+water yam
+water.
+waterblommetjies
+watercress
+waterleaf
+wheat
+wheat flour
+white beans
+white bread (sliced)
+white corn (cacahuazintle)
+white mielies (cut off the cob)
+white onion
+white or spotted brown beans
+white pepper
+white sugar
+white vinegar
+white wine
+white zobo sepal
+whole hard-boiled chicken (pluvera / wilki)
+whole horse mackerel fish
+whole wheat bread
+whole wheat flour
+wild spinach
+wonton wrapper
+worcestershire sauce
+yakuwa (star shape kenaf leaf)
+yam
+yeast
+yellow mustard
+yellow peppers
+yoghurt
+yogurt
+yorkshire pudding
+zatarain's
+zehfe
+zobo (dried hibiscus) sepals
+zucchini
+ñora

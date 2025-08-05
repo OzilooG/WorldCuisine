@@ -1,0 +1,31 @@
+local_name:
+Šaltibarščiai
+time_of_day_more:
+type_of_dish_more:
+occasions_more:
+recipe:
+https://messyfeast.com/cold-beet-soup-recipe/
+english_name:
+Cold Pink (Betroot) Soup
+public_cc_image_url:
+https://i0.wp.com/messyfeast.com/wp-content/uploads/2025/03/lithuanian-soup-edited-scaled.jpg?resize=2048%2C1536&ssl=1
+public_cc_image_caption:
+Cold beetroot soup served with potatoes with sprinkled dill
+language:
+lithuanian
+cultures:
+Baltic
+regions:
+Baltic
+continent:
+Europe
+utensils:
+spoon, fork
+drink:
+ingredients:
+beetroots, kefir, cucumber, boiled eggs, green onions, dill
+more_details:
+country_code:
+LT
+countries:
+Lithuania
