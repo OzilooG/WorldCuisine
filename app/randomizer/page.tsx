@@ -1,6 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react"; 
+import SaveDishButton from '../components/Cookies/index'; 
+import Cookies from "js-cookie"; 
+
 
 interface Dish {
   id: string;
@@ -34,18 +37,16 @@ interface Dish {
 interface WorldDishesData {
   dishes: { [key: string]: Dish };
 }
-
 export default function Randomizer() {
   const [random_dish, setRandomDish] = useState<Dish | null>(null);
   const [allDishes, setAllDishes] = useState<WorldDishesData>();
   const [error, setError] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [isSaved, setIsSaved] = useState<boolean>(false); // 👈 New state
 
-  // Use useEffect to fetch the data once when the component mounts
   useEffect(() => {
     const fetchDishes = async () => {
       try {
-        // Fetch from the public directory
         const response = await fetch('/data/worlddishes.json');
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
@@ -63,12 +64,20 @@ export default function Randomizer() {
     fetchDishes();
   }, []);
 
-  const generateRandomDish = (event: React.FormEvent) => {
-    event.preventDefault(); // Prevent default form submission behavior (page reload)
+  // Update isSaved every time a new random dish is selected
+  useEffect(() => {
+    if (random_dish) {
+      const saved = Cookies.get(`savedDish_${random_dish.id}`);
+      setIsSaved(saved === 'true');
+    }
+  }, [random_dish]);
 
-    if (allDishes == undefined){
-        console.error("Dishes are missing! Check json ASAP!!!");
-        return;
+  const generateRandomDish = (event: React.FormEvent) => {
+    event.preventDefault();
+
+    if (!allDishes) {
+      console.error("Dishes are missing! Check JSON ASAP!!!");
+      return;
     }
     const dishIds = Object.keys(allDishes.dishes);
     const randomIndex = Math.floor(Math.random() * dishIds.length);
@@ -77,13 +86,17 @@ export default function Randomizer() {
     setRandomDish(allDishes.dishes[randomId]);
   };
 
-  if (isLoading) {
-    return <div>Loading dishes...</div>;
-  }
+  const handleSave = () => {
+    if (random_dish) {
+      Cookies.set(`savedDish_${random_dish.id}`, 'true');
+      setIsSaved(true);
+      alert('Dish saved!');
+    }
+  };
 
-  if (error) {
-    return <div className="text-red-500">Error: {error}</div>;
-  }
+  // UI Rendering
+  if (isLoading) return <div>Loading dishes...</div>;
+  if (error) return <div className="text-red-500">Error: {error}</div>;
 
   return (
     <div>
@@ -104,9 +117,7 @@ export default function Randomizer() {
             {random_dish.english_name}
           </h3>
           {random_dish.countries && (
-            <p className="text-xl mb-2">
-              {random_dish.countries}
-            </p>
+            <p className="text-xl mb-2">{random_dish.countries}</p>
           )}
           {random_dish.local_name && (
             <p className="text-xl text-gray-600 italic mb-2">
@@ -136,7 +147,7 @@ export default function Randomizer() {
                 <img
                   src={random_dish.public_cc_image_url}
                   alt={random_dish.public_cc_image_caption}
-                  className="max-w-full h-auto rounded-lg shadow-sm "
+                  className="max-w-full h-auto rounded-lg shadow-sm"
                   style={{ maxWidth: '400px' }}
                 />
                 {random_dish.public_cc_image_caption && (
@@ -145,7 +156,21 @@ export default function Randomizer() {
                   </p>
                 )}
               </div>
+          )}
+
+          
+          <div className="mt-6">
+            {isSaved ? (
+              <p className="text-green-600 font-semibold">✓ Dish already saved</p>
+            ) : (
+              <button
+                onClick={handleSave}
+                className="mt-2 px-4 py-2 bg-blue-500 text-white font-bold rounded hover:bg-blue-700 transition"
+              >
+                Save Dish
+              </button>
             )}
+          </div>
         </div>
       )}
     </div>
