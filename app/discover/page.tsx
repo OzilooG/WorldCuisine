@@ -63,7 +63,7 @@ export default function SearchPage() {
       {filtered.length === 0 ? (
         <p>No matching dishes found.</p>
       ) : (
-        <ul className="flex flex-wrap gap-5">
+        <ul className="flex flex-wrap justify-center gap-3">
           {filtered.map((dish) => {
             return (
               <li key={dish.id} className="dish-card">

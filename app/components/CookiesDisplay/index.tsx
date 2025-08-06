@@ -28,7 +28,7 @@ const SavedDishes: React.FC<SavedDishesProps> = ({ allDishes }) => {
   return (
     <div className="w-[100vw]">
       {savedDishes.length > 0 ? (
-        <ul className="flex flex-col items-center text-center gap-5 my-5">
+        <ul className="flex flex-wrap justify-center items-center text-center gap-5 my-5">
           {savedDishes.map((dish) => (
             <li key={dish.id} className="dish-card">
               <h2>{dish.local_name}</h2>

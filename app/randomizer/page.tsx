@@ -85,14 +85,6 @@ export default function Randomizer() {
     setRandomDish(allDishes.dishes[randomId]);
   };
 
-  const handleSave = () => {
-    if (random_dish) {
-      Cookies.set(`savedDish_${random_dish.id}`, "true");
-      setIsSaved(true);
-      alert("Dish saved!");
-    }
-  };
-
   // UI Rendering
   if (isLoading) return <div>Loading dishes...</div>;
   if (error) return <div className="text-red-500">Error: {error}</div>;
@@ -115,15 +107,15 @@ export default function Randomizer() {
       {random_dish && (
         <div className="p-6 border border-gray-200 rounded-lg shadow-lg bg-white mx-auto text-center max-w-4xl">
           <h3 className="text-3xl font-semibold text-gray-800 mb-2">
-            {random_dish.english_name}
+            {random_dish.local_name}
           </h3>
-          {random_dish.countries && (
-            <p className="text-xl mb-2">{random_dish.countries}</p>
-          )}
-          {random_dish.local_name && (
+          {random_dish.english_name && (
             <p className="text-xl text-gray-600 italic mb-2">
-              ({random_dish.local_name})
+              {random_dish.english_name}
             </p>
+          )}
+          {random_dish.countries && (
+            <p className="text-xl mb-2">{random_dish.countries.join(", ")}</p>
           )}
           {random_dish.description && (
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -159,15 +151,7 @@ export default function Randomizer() {
               </div>
             )}
 
-          <div className="mt-6">
-            {isSaved ? (
-              <p className="text-green-600 font-semibold">
-                ✓ Dish already saved
-              </p>
-            ) : (
-              <SaveDishButton dishId={random_dish.id} />
-            )}
-          </div>
+          <SaveDishButton dishId={random_dish.id} />
         </div>
       )}
     </div>
