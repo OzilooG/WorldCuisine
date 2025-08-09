@@ -18,7 +18,7 @@ const Navbar = () => {
           <Link className="p-4" href="/discover">
             Discover
           </Link>
-          <Link className="p-4" href="/saveddishes">
+          <Link className="p-4" href="/SavedDishes">
             Saved Dishes
           </Link>
           <Link className="p-4" href="/randomizer">
