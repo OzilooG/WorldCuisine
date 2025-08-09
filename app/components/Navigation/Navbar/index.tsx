@@ -13,7 +13,7 @@ const Navbar = () => {
       <nav className="navbar bg-secondary flex items-center justify-center shadow-md">
         <div className="hidden md:flex space-x-6 [&>*]:hover:bg-accent [&>*]:transition-colors">
           <Link className="p-4" href="/">
-            Home
+            Map
           </Link>
           <Link className="p-4" href="/discover">
             Discover

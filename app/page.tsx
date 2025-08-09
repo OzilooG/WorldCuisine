@@ -2,6 +2,7 @@
 
 import React from "react";
 import SimpleMapDisplay from "./components/Worldmap";
+import { Link } from "lucide-react";
 
 export default function Home() {
   return (
@@ -10,9 +11,16 @@ export default function Home() {
         <SimpleMapDisplay />
       </div>
 
-      <div>
-        <h1>About this project</h1>
-        <p></p>
+      <div className="text-center flex flex-col items-center">
+        <h1 className="p-15 text-2xl font-bold">About this project</h1>
+        <p className="max-w-[500px]">
+          Our goal with this project is to have a publicly available way to try
+          new foods around the world. If you like to contribute please click the
+          button bellow.
+        </p>
+        <Link href="/addish">
+          <p className="btn">Contribute</p>
+        </Link>
       </div>
     </div>
   );
