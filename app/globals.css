@@ -47,7 +47,7 @@ body {
 }
 
 .btn:hover {
-  background-color: var(--color-accent);
+  background-color: var(--color-secondary);
 }
 
 .dish-card {

@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from './components/Navigation/Navbar';
-
+import Navbar from "./components/Navigation/Navbar";
+import Footer from "./components/Navigation/Footer";
 
 export const metadata: Metadata = {
   title: "World Cuisine",
-  description: "A place where you can find new and fun meals to cook from all around the world.",
+  description:
+    "A place where you can find new and fun meals to cook from all around the world.",
 };
 
 export default function RootLayout({
@@ -15,10 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      
       <body className="overflow-x-hidden">
-        <Navbar/>
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

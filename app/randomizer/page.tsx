@@ -37,11 +37,10 @@ interface WorldDishesData {
   dishes: { [key: string]: Dish };
 }
 export default function Randomizer() {
-  const [random_dish, setRandomDish] = useState<Dish | null>(null);
+  const [dish, setRandomDish] = useState<Dish | null>(null);
   const [allDishes, setAllDishes] = useState<WorldDishesData>();
   const [error, setError] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
-  const [isSaved, setIsSaved] = useState<boolean>(false); // 👈 New state
 
   useEffect(() => {
     const fetchDishes = async () => {
@@ -63,14 +62,6 @@ export default function Randomizer() {
     fetchDishes();
   }, []);
 
-  // Update isSaved every time a new random dish is selected
-  useEffect(() => {
-    if (random_dish) {
-      const saved = Cookies.get(`savedDish_${random_dish.id}`);
-      setIsSaved(saved === "true");
-    }
-  }, [random_dish]);
-
   const generateRandomDish = (event: React.FormEvent) => {
     event.preventDefault();
 
@@ -90,7 +81,7 @@ export default function Randomizer() {
   if (error) return <div className="text-red-500">Error: {error}</div>;
 
   return (
-    <div>
+    <div className="my-20">
       <h1 className="mt-15 text-3xl font-bold mb-4 flex flex-col items-center">
         Dish Randomizer
       </h1>
@@ -104,54 +95,54 @@ export default function Randomizer() {
         </button>
       </form>
 
-      {random_dish && (
-        <div className="p-6 border border-gray-200 rounded-lg shadow-lg bg-white mx-auto text-center max-w-4xl">
-          <h3 className="text-3xl font-semibold text-gray-800 mb-2">
-            {random_dish.local_name}
-          </h3>
-          {random_dish.english_name && (
-            <p className="text-xl text-gray-600 italic mb-2">
-              {random_dish.english_name}
-            </p>
-          )}
-          {random_dish.countries && (
-            <p className="text-xl mb-2">{random_dish.countries.join(", ")}</p>
-          )}
-          {random_dish.description && (
-            <p className="text-gray-700 leading-relaxed mb-4">
-              {random_dish.description}
-            </p>
-          )}
-          {random_dish.recipe && (
-            <p className="mb-4">
-              <a
-                href={random_dish.recipe}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn"
-              >
-                View Recipe
-              </a>
-            </p>
-          )}
-          {random_dish.public_cc_image_url &&
-            random_dish.public_cc_image_url !== "No CC Images Available" && (
-              <div className="mt-4 flex flex-col items-center">
-                <img
-                  src={random_dish.public_cc_image_url}
-                  alt={random_dish.public_cc_image_caption}
-                  className="max-w-full h-auto rounded-lg shadow-sm"
-                  style={{ maxWidth: "400px" }}
-                />
-                {random_dish.public_cc_image_caption && (
-                  <p className="text-sm text-gray-500 mt-2">
-                    {random_dish.public_cc_image_caption}
-                  </p>
-                )}
+      {dish && (
+        <div className="flex items-center justify-center">
+          <div
+            key={dish.id}
+            className="bg-white rounded-xl shadow-md overflow-hidden w-80 flex flex-col hover:shadow-lg transition-shadow"
+          >
+            {dish.public_cc_image_url &&
+            dish.public_cc_image_url !== "No CC Images Available" ? (
+              <img
+                src={dish.public_cc_image_url}
+                alt={dish.english_name || dish.local_name}
+                className="h-48 w-full object-cover"
+              />
+            ) : (
+              <div className="h-48 w-full bg-gray-100 flex items-center justify-center text-gray-400">
+                No Image
               </div>
             )}
 
-          <SaveDishButton dishId={random_dish.id} />
+            <div className="p-4 flex flex-col flex-grow">
+              <h2 className="text-primary font-bold text-lg">
+                {dish.local_name}
+              </h2>
+              {dish.english_name && (
+                <p className="text-gray-500 italic">{dish.english_name}</p>
+              )}
+              {dish.description && (
+                <p className="mt-2 text-sm text-gray-700 line-clamp-3">
+                  {dish.description}
+                </p>
+              )}
+
+              {/* Actions */}
+              <div className="mt-auto flex flex-col gap-2">
+                {dish.recipe && (
+                  <a
+                    href={dish.recipe}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn"
+                  >
+                    View Recipe
+                  </a>
+                )}
+                <SaveDishButton dishId={dish.id} />
+              </div>
+            </div>
+          </div>
         </div>
       )}
     </div>

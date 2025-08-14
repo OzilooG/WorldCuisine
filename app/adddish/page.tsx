@@ -277,10 +277,7 @@ export default function FormPage() {
             value={formData.countries?.join(",")}
           />
 
-          <button
-            type="submit"
-            className="col-span-2 mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700"
-          >
+          <button type="submit" className="btn col-span-2">
             Submit
           </button>
         </form>

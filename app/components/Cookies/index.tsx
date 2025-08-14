@@ -21,7 +21,6 @@ const SaveDishButton: React.FC<SaveDishButtonProps> = ({ dishId }) => {
   const handleSave = () => {
     Cookies.set(`savedDish_${dishId}`, "true");
     setIsSaved(true);
-    alert("Dish saved!");
   };
 
   return isSaved ? (
