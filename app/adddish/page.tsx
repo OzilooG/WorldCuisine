@@ -129,9 +129,9 @@ export default function FormPage() {
 
   return (
     <div className="max-w-4xl mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-4">Add your favourite dish!</h1>
+      <h1 className="text-2xl font-bold mb-4">Suggest your favourite dish!</h1>
       <p className="mb-4 text-gray-600 italic">
-        You are only allowed to send one dish per day due to email traffic
+        You are only allowed to suggest one dish per day due to email traffic
         reasons. Thank you for understanding.
       </p>
 

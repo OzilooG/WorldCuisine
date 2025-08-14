@@ -4,7 +4,7 @@ export default function VersionHistoryPage() {
   const updates = [
     {
       date: "2025-08-14",
-      dishes: ["Spaghetti Carbonara", "Pad Thai", "Shakshuka"],
+      dishes: ["Šaltibarščiai", "Pad Thai", "Shakshuka"],
     },
     {
       date: "2025-08-10",
