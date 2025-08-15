@@ -1,6 +1,8 @@
 import json
-from typing import List, Dict, Optional
+from typing import List, Dict
 from dataclasses import dataclass, field
+from datetime import datetime
+import os
 
 @dataclass
 class Country:
@@ -134,6 +136,48 @@ def write_json(new_data: Dict, filename: str = 'worlddishes.json') -> None:
     except Exception as e:
         raise RuntimeError(f"Failed to write JSON: {e}")
 
+def writeToVersionHistory(dish):
+    """
+    format:
+    {
+    date: "2025-08-14",
+    dishes: ["Šaltibarščiai", "Pad Thai", "Shakshuka"],
+    }
+    """
+
+
+    today_str = datetime.today().strftime('%Y-%m-%d')
+    filepath = 'pasteIntoVersionHistory.txt'
+
+    # Load existing data
+    if os.path.exists(filepath):
+        with open(filepath, 'r', encoding='utf-8') as f:
+            try:
+                history = json.load(f)
+            except json.JSONDecodeError:
+                history = []
+    else:
+        history = []
+
+    # Ensure structure is a list
+    if not isinstance(history, list):
+        history = []
+
+    # Check if first entry matches today's date
+    if history and history[0].get("date") == today_str:
+        if dish.name not in history[0]["dishes"]:
+            history[0]["dishes"].append(dish.name)
+    else:
+        # New date entry at the top
+        history.insert(0, {
+            "date": today_str,
+            "dishes": [dish.name]
+        })
+
+    # Save back
+    with open(filepath, 'w', encoding='utf-8') as f:
+        json.dump(history, f, ensure_ascii=False, indent=4)
+
 
 if __name__ == '__main__':
     with open('dishinput.txt', 'r', encoding='utf-8') as f:
@@ -145,3 +189,4 @@ if __name__ == '__main__':
     dish = Dish(id=nid, **cleaned)
     write_json(dish.to_dict())
     print(f"Succesfully added new dish {dish.local_name} to worlddishes.json in the same directory")
+

@@ -1,16 +1,15 @@
 local_name:
-Šaltibarščiai
+Cepelinai
 time_of_day_more:
 type_of_dish_more:
 occasions_more:
 recipe:
-https://messyfeast.com/cold-beet-soup-recipe/
+https://www.bbcgoodfood.com/recipes/cepelinai-meat-potato-dumplings
 english_name:
-Cold Pink (Betroot) Soup
 public_cc_image_url:
-https://i0.wp.com/messyfeast.com/wp-content/uploads/2025/03/lithuanian-soup-edited-scaled.jpg?resize=2048%2C1536&ssl=1
+https://upload.wikimedia.org/wikipedia/commons/7/7f/Cepelinai_Kaunas_2023.jpg
 public_cc_image_caption:
-Cold beetroot soup served with potatoes with sprinkled dill
+Cepelinai with smoked pancetta, dill and sour cream.
 language:
 lithuanian
 cultures:
@@ -20,11 +19,13 @@ Baltic
 continent:
 Europe
 utensils:
-spoon, fork
+fork, knife
 drink:
+kefyr or buttermilk
 ingredients:
-beetroots, kefir, cucumber, boiled eggs, green onions, dill
-more_details:
+potatoes, beef mince, pork mince, egg, smoked pancetta, onion, garlic, olive oil, lemon juice, dill, sour cream, potato startch
+description:
+Dumplings made with pork or beef mince encased in potato.
 country_code:
 LT
 countries:

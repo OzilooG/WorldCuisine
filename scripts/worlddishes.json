@@ -37916,6 +37916,102 @@
             "uploaded_image_name": "",
             "uploaded_image_url": "",
             "uploaded_image_caption": ""
+        },
+        "979": {
+            "id": 979,
+            "local_name": "Cepelinai",
+            "country_code": [
+                "LT"
+            ],
+            "english_name": "",
+            "description": "Dumplings made with pork or beef mince encased in potato.",
+            "countries": [
+                "Lithuania"
+            ],
+            "recipe": "https://www.bbcgoodfood.com/recipes/cepelinai-meat-potato-dumplings",
+            "public_cc_image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Cepelinai_Kaunas_2023.jpg",
+            "language": [
+                "lithuanian"
+            ],
+            "language_code": "",
+            "continent": "Europe",
+            "regions": "Baltic",
+            "cultures": "Baltic",
+            "time_of_day": [],
+            "time_of_day_more": "",
+            "type_of_dish": [],
+            "type_of_dish_more": "",
+            "utensils": "fork, knife",
+            "drink": "kefyr or buttermilk",
+            "occasions": [],
+            "occasions_more": "",
+            "ingredients": [
+                "potatoes",
+                "beef mince",
+                "pork mince",
+                "egg",
+                "smoked pancetta",
+                "onion",
+                "garlic",
+                "olive oil",
+                "lemon juice",
+                "dill",
+                "sour cream",
+                "potato startch"
+            ],
+            "more_details": "",
+            "public_cc_image_caption": "Cepelinai with smoked pancetta, dill and sour cream.",
+            "uploaded_image_name": "",
+            "uploaded_image_url": "",
+            "uploaded_image_caption": ""
+        },
+        "980": {
+            "id": 980,
+            "local_name": "Cepelinai",
+            "country_code": [
+                "LT"
+            ],
+            "english_name": "",
+            "description": "Dumplings made with pork or beef mince encased in potato.",
+            "countries": [
+                "Lithuania"
+            ],
+            "recipe": "https://www.bbcgoodfood.com/recipes/cepelinai-meat-potato-dumplings",
+            "public_cc_image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Cepelinai_Kaunas_2023.jpg",
+            "language": [
+                "lithuanian"
+            ],
+            "language_code": "",
+            "continent": "Europe",
+            "regions": "Baltic",
+            "cultures": "Baltic",
+            "time_of_day": [],
+            "time_of_day_more": "",
+            "type_of_dish": [],
+            "type_of_dish_more": "",
+            "utensils": "fork, knife",
+            "drink": "kefyr or buttermilk",
+            "occasions": [],
+            "occasions_more": "",
+            "ingredients": [
+                "potatoes",
+                "beef mince",
+                "pork mince",
+                "egg",
+                "smoked pancetta",
+                "onion",
+                "garlic",
+                "olive oil",
+                "lemon juice",
+                "dill",
+                "sour cream",
+                "potato startch"
+            ],
+            "more_details": "",
+            "public_cc_image_caption": "Cepelinai with smoked pancetta, dill and sour cream.",
+            "uploaded_image_name": "",
+            "uploaded_image_url": "",
+            "uploaded_image_caption": ""
         }
     },
     "dishes_country_map": {
@@ -39043,7 +39139,9 @@
             "967"
         ],
         "LT": [
-            "978"
+            "978",
+            "979",
+            "980"
         ]
     }
 }

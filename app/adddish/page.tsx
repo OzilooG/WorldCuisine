@@ -5,6 +5,11 @@ import emailjs from "@emailjs/browser";
 import Select from "react-select";
 import rawCountryList from "@/public/data/countrytocode.json";
 
+type MultiSelectOption = {
+  name: string;
+  value: string;
+};
+
 type DishForm = {
   id: string;
   local_name: string;
@@ -19,13 +24,13 @@ type DishForm = {
   continent?: string;
   regions?: string;
   cultures?: string;
-  time_of_day?: string;
   time_of_day_more?: string;
-  type_of_dish?: string;
   type_of_dish_more?: string;
   utensils?: string;
   drink?: string;
-  occasions?: string;
+  time_of_day?: { name: string; value: string }[];
+  type_of_dish?: { name: string; value: string }[];
+  occasions?: { name: string; value: string }[];
   occasions_more?: string;
   ingredients?: string;
   more_details?: string;
@@ -103,8 +108,28 @@ export default function FormPage() {
 
   const handleMultiSelectChange =
     (field: keyof DishForm) => (selected: any) => {
-      const values = selected ? selected.map((s: any) => s.value) : [];
-      setFormData((prev) => ({ ...prev, [field]: values }));
+      const values = selected
+        ? selected.map((s: any) => ({
+            name: s.label,
+            value: s.value,
+          }))
+        : [];
+
+      // Update React formData state
+      setFormData((prev) => ({
+        ...prev,
+        [field]: values,
+      }));
+
+      // Sync hidden input for EmailJS
+      const hiddenInput = document.querySelector<HTMLInputElement>(
+        `input[name="${field}"]`
+      );
+      if (hiddenInput) {
+        hiddenInput.value = values
+          .map((v: MultiSelectOption) => v.value)
+          .join(", ");
+      }
     };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -159,6 +184,13 @@ export default function FormPage() {
             classNamePrefix="select"
           />
           <input
+            type="hidden"
+            name="time_of_day"
+            value={
+              formData.time_of_day?.map((t: any) => t.value).join(", ") || ""
+            }
+          />
+          <input
             key={"time_of_day_more"}
             name={"time_of_day_more"}
             value={(formData as any)["time_of_day_more"] || ""}
@@ -176,6 +208,13 @@ export default function FormPage() {
             classNamePrefix="select"
           />
           <input
+            type="hidden"
+            name="type_of_dish"
+            value={
+              formData.type_of_dish?.map((t: any) => t.value).join(", ") || ""
+            }
+          />
+          <input
             key={"type_of_dish_more"}
             name={"type_of_dish_more"}
             value={(formData as any)["type_of_dish_more"] || ""}
@@ -191,6 +230,13 @@ export default function FormPage() {
             onChange={handleMultiSelectChange("occasions")}
             className=""
             classNamePrefix="select"
+          />
+          <input
+            type="hidden"
+            name="occasions"
+            value={
+              formData.occasions?.map((t: any) => t.value).join(", ") || ""
+            }
           />
           <input
             key={"occasions_more"}
