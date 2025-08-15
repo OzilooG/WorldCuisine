@@ -1,32 +1,32 @@
 local_name:
-Cepelinai
+Shephard's pie
+time_of_day:
+lunch, dinner
 time_of_day_more:
+type_of_dish:
+Main dish - stand alone (e.g. one pot meal)
 type_of_dish_more:
+occasions:
+both
 occasions_more:
 recipe:
-https://www.bbcgoodfood.com/recipes/cepelinai-meat-potato-dumplings
+https://www.bbcgoodfood.com/recipes/no-fuss-shepherds-pie
 english_name:
+Shephard's pie
 public_cc_image_url:
-https://upload.wikimedia.org/wikipedia/commons/7/7f/Cepelinai_Kaunas_2023.jpg
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ABermuda_%2528UK%2529_image_number_123_Shepherds_Pie_dinner_dish_at_restaurant.jpg&psig=AOvVaw3e0Djjejqg9luVdRvP1dAb&ust=1755350296701000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCODBoMjzjI8DFQAAAAAdAAAAABAE
 public_cc_image_caption:
-Cepelinai with smoked pancetta, dill and sour cream.
 language:
-lithuanian
 cultures:
-Baltic
 regions:
-Baltic
 continent:
-Europe
 utensils:
-fork, knife
+fork
 drink:
-kefyr or buttermilk
 ingredients:
-potatoes, beef mince, pork mince, egg, smoked pancetta, onion, garlic, olive oil, lemon juice, dill, sour cream, potato startch
+potatoes, minced meat
 description:
-Dumplings made with pork or beef mince encased in potato.
 country_code:
-LT
+FR,IE,GB
 countries:
-Lithuania
+France,Ireland,United Kingdom

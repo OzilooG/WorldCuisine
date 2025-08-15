@@ -147,7 +147,7 @@ def writeToVersionHistory(dish):
 
 
     today_str = datetime.today().strftime('%Y-%m-%d')
-    filepath = 'pasteIntoVersionHistory.txt'
+    filepath = '../public/data/versionHistory.json'
 
     # Load existing data
     if os.path.exists(filepath):
@@ -165,18 +165,19 @@ def writeToVersionHistory(dish):
 
     # Check if first entry matches today's date
     if history and history[0].get("date") == today_str:
-        if dish.name not in history[0]["dishes"]:
-            history[0]["dishes"].append(dish.name)
+        if dish.local_name not in history[0]["dishes"]:
+            history[0]["dishes"].append(dish.local_name)
     else:
         # New date entry at the top
         history.insert(0, {
             "date": today_str,
-            "dishes": [dish.name]
+            "dishes": [dish.local_name]
         })
 
     # Save back
     with open(filepath, 'w', encoding='utf-8') as f:
         json.dump(history, f, ensure_ascii=False, indent=4)
+        print(f"succesfully added a new version")
 
 
 if __name__ == '__main__':
@@ -190,3 +191,4 @@ if __name__ == '__main__':
     write_json(dish.to_dict())
     print(f"Succesfully added new dish {dish.local_name} to worlddishes.json in the same directory")
 
+    writeToVersionHistory(dish)
