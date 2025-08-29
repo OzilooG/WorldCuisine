@@ -1,9 +1,16 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState, use } from "react";
 import path from "path";
-import { promises as fs } from "fs";
 import SaveDishButton from "../../components/Cookies/index";
 import { Dish } from "@/types/dish";
 import Link from "next/link";
+
+interface CountryPageProps {
+  params: Promise<{
+    countryCode: string;
+  }>;
+}
 
 interface OptimisedDishData {
   countries: { code: string; name: string }[];
@@ -11,28 +18,20 @@ interface OptimisedDishData {
   dishes_country_map: { [countryCode: string]: string[] };
 }
 
-interface CountryPageProps {
-  params: {
+export default function CountryPage({ params }: CountryPageProps) {
+  const { countryCode: countryCodeParam } = use(params) as {
     countryCode: string;
   };
-}
+  const countryCode = countryCodeParam.toUpperCase();
+  const [data, setData] = useState<OptimisedDishData | null>(null); // Uppercase for lookup
 
-// Server component which fetches and renders data
-export default async function CountryPage({ params }: CountryPageProps) {
-  const resolvedParams = await params;
-  const { countryCode: countryCodeParam } = resolvedParams; // Destructure and rename
-  const countryCode = countryCodeParam.toUpperCase(); // Uppercase for lookup
-
-  const filePath = path.join(
-    process.cwd(),
-    "public",
-    "data",
-    "worlddishes.json"
-  );
-
-  let data: OptimisedDishData | null = null;
-  const jsonData = await fs.readFile(filePath, "utf-8");
-  data = JSON.parse(jsonData);
+  useEffect(() => {
+    fetch("/data/worlddishes.json")
+      .then((res) => res.json())
+      .then((json: OptimisedDishData) => {
+        setData(json);
+      });
+  }, []);
 
   //make sure data is not null
   if (!data) {
