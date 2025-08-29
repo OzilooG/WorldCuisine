@@ -83,7 +83,7 @@ export default function HomePage() {
             Our interactive map makes it easy to explore dishes by location.
             Just click on a country from which you would like to see the dishes!
           </p>
-          <div className="rounded-xl mx-auto overflow-hidden shadow-lg w-[80vw]">
+          <div className="rounded-xl mx-auto overflow-hidden shadow-lg ">
             <div className="mx-auto w-[300vw] md:w-[90vw]">
               <SimpleMapDisplay />
             </div>

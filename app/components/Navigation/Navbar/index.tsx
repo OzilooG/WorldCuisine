@@ -18,7 +18,7 @@ const Navbar = () => {
   const navLinks = [
     { href: "/map", label: "Map", icon: <MapIcon size={18} /> },
     { href: "/discover", label: "Discover", icon: <Compass size={18} /> },
-    { href: "/saveddishes", label: "Saved Dishes", icon: <Heart size={18} /> },
+    { href: "/SavedDishes", label: "Saved Dishes", icon: <Heart size={18} /> },
     { href: "/randomizer", label: "Randomizer", icon: <Shuffle size={18} /> },
     {
       href: "/adddish",
