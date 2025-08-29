@@ -59,7 +59,7 @@ export default function CountryPage({ params }: CountryPageProps) {
     .filter((dish): dish is Dish => Boolean(dish));
 
   return (
-    <div className="p-20">
+    <div className="p-20 min-h-[70vh]">
       <h1 className="text-3xl font-bold text-center">
         Dishes from {countryInfo.name} ({countryInfo.code})
       </h1>

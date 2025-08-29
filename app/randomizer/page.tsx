@@ -81,7 +81,7 @@ export default function Randomizer() {
   if (error) return <div className="text-red-500">Error: {error}</div>;
 
   return (
-    <div className="my-20">
+    <div className="my-20 min-h-[70vh]">
       <h1 className="mt-15 text-3xl font-bold mb-4 flex flex-col items-center">
         Dish Randomizer
       </h1>
