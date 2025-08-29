@@ -13,7 +13,7 @@ export default async function SavedPage() {
   const data = JSON.parse(jsonData);
 
   return (
-    <div className="my-20">
+    <div className="my-20 min-h-[70vh]">
       <h1 className="text-3xl font-bold text-center">Your Saved Dishes</h1>
       <SavedDishes allDishes={data.dishes} />
     </div>
