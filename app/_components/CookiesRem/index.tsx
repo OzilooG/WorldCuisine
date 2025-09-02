@@ -1,4 +1,3 @@
-// app/components/RemoveDishButton.tsx
 "use client";
 
 import React from "react";

@@ -1,21 +1,12 @@
-import path from "path";
-import { promises as fs } from "fs";
-import SavedDishes from "../components/CookiesDisplay/index"; // adjust path
+import SavedDishes from "../_components/CookiesDisplay/index";
+import { fetchAllDishes } from "@/lib/config";
 
 export default async function SavedPage() {
-  const filePath = path.join(
-    process.cwd(),
-    "public",
-    "data",
-    "worlddishes.json"
-  );
-  const jsonData = await fs.readFile(filePath, "utf-8");
-  const data = JSON.parse(jsonData);
-
+  const dishes = await fetchAllDishes();
   return (
     <div className="my-20 min-h-[70vh]">
       <h1 className="text-3xl font-bold text-center">Your Saved Dishes</h1>
-      <SavedDishes allDishes={data.dishes} />
+      <SavedDishes dishes={dishes} />
     </div>
   );
 }

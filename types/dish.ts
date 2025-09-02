@@ -1,7 +1,8 @@
 export type Dish = {
   id: string;
-  local_name?: string;
-  english_name: string;
+  local_name: string;
+  country_code: string[];
+  english_name?: string;
   description?: string;
   countries?: string[];
   recipe?: string;
@@ -11,18 +12,23 @@ export type Dish = {
   continent?: string;
   regions?: string;
   cultures?: string;
-  time_of_day?: string;
+  time_of_day?: string[];
   time_of_day_more?: string;
-  type_of_dish?: string;
+  type_of_dish?: string[];
   type_of_dish_more?: string;
-  utensils?: string;
+  utensils?: string[];
   drink?: string;
-  occasions?: string;
+  occasions?: string[];
   occasions_more?: string;
-  ingredients?: string;
+  ingredients?: string[];
   more_details?: string;
   public_cc_image_caption?: string;
   uploaded_image_name?: string;
   uploaded_image_url?: string;
   uploaded_image_caption?: string;
+};
+
+export type Country = {
+  code: string;
+  name: string;
 };
