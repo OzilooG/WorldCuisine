@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import SimpleMapDisplay from "../components/Worldmap";
+import SimpleMapDisplay from "../_components/Worldmap";
 
 export default function Map() {
   return (

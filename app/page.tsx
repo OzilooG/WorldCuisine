@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { Compass, Heart, Shuffle, PlusCircle } from "lucide-react";
-import SimpleMapDisplay from "./components/Worldmap";
+import SimpleMapDisplay from "./_components/Worldmap";
 
 export default function HomePage() {
   return (
@@ -38,37 +38,40 @@ export default function HomePage() {
         <h2 className="text-3xl font-bold text-center mb-12">
           Why You’ll Love World Dishes
         </h2>
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-4 gap-8 [grid-auto-rows:1fr]">
           {[
             {
+              link: "/discover",
               icon: <Compass size={32} className="text-secondary" />,
               title: "Discover",
               desc: "Find authentic dishes from every region on an interactive map.",
             },
             {
+              link: "/saveddishes",
               icon: <Heart size={32} className="text-primary" />,
               title: "Save Your Favourites",
               desc: "Keep track of dishes you want to try later.",
             },
             {
+              link: "/randomiser",
               icon: <Shuffle size={32} />,
               title: "Get Inspired",
               desc: "Use the randomizer to discover something new every day.",
             },
             {
+              link: "/adddish",
               icon: <PlusCircle size={32} className="text-accent" />,
               title: "Contribute",
               desc: "Add your own recipes and share them with the world.",
             },
           ].map((item, i) => (
-            <div
-              key={i}
-              className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition-shadow"
-            >
-              <div className="flex justify-center mb-4">{item.icon}</div>
-              <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-              <p className="text-sm text-gray-600">{item.desc}</p>
-            </div>
+            <Link href={item.link} key={i}>
+              <div className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition-shadow">
+                <div className="flex justify-center mb-4">{item.icon}</div>
+                <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+                <p className="text-sm text-gray-600">{item.desc}</p>
+              </div>
+            </Link>
           ))}
         </div>
       </section>

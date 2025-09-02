@@ -1,43 +1,13 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
-import emailjs from "@emailjs/browser";
 import Select from "react-select";
 import rawCountryList from "@/public/data/countrytocode.json";
+import { Dish } from "@/types/dish";
 
 type MultiSelectOption = {
   name: string;
   value: string;
-};
-
-type DishForm = {
-  id: string;
-  local_name: string;
-  country_code: string[];
-  english_name?: string;
-  description?: string;
-  countries?: string[];
-  recipe?: string;
-  public_cc_image_url?: string;
-  language?: string;
-  language_code?: string;
-  continent?: string;
-  regions?: string;
-  cultures?: string;
-  time_of_day_more?: string;
-  type_of_dish_more?: string;
-  utensils?: string;
-  drink?: string;
-  time_of_day?: { name: string; value: string }[];
-  type_of_dish?: { name: string; value: string }[];
-  occasions?: { name: string; value: string }[];
-  occasions_more?: string;
-  ingredients?: string;
-  more_details?: string;
-  public_cc_image_caption?: string;
-  uploaded_image_name?: string;
-  uploaded_image_url?: string;
-  uploaded_image_caption?: string;
 };
 
 const countryOptions = rawCountryList.countries.map((country) => ({
@@ -74,7 +44,7 @@ const occasionOptions = ["regular", "special", "both"].map((v) => ({
 }));
 
 export default function FormPage() {
-  const [formData, setFormData] = useState<DishForm>({
+  const [formData, setFormData] = useState<Dish>({
     id: "",
     local_name: "",
     country_code: [],
@@ -106,54 +76,56 @@ export default function FormPage() {
     }));
   };
 
-  const handleMultiSelectChange =
-    (field: keyof DishForm) => (selected: any) => {
-      const values = selected
-        ? selected.map((s: any) => ({
-            name: s.label,
-            value: s.value,
-          }))
-        : [];
+  const handleMultiSelectChange = (field: keyof Dish) => (selected: any) => {
+    const values = selected
+      ? selected.map((s: any) => ({
+          name: s.label,
+          value: s.value,
+        }))
+      : [];
 
-      // Update React formData state
-      setFormData((prev) => ({
-        ...prev,
-        [field]: values,
-      }));
+    // Update React formData state
+    setFormData((prev) => ({
+      ...prev,
+      [field]: values,
+    }));
 
-      // Sync hidden input for EmailJS
-      const hiddenInput = document.querySelector<HTMLInputElement>(
-        `input[name="${field}"]`
-      );
-      if (hiddenInput) {
-        hiddenInput.value = values
-          .map((v: MultiSelectOption) => v.value)
-          .join(", ");
-      }
-    };
+    // Sync hidden input for EmailJS
+    const hiddenInput = document.querySelector<HTMLInputElement>(
+      `input[name="${field}"]`
+    );
+    if (hiddenInput) {
+      hiddenInput.value = values
+        .map((v: MultiSelectOption) => v.value)
+        .join(", ");
+    }
+  };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     const now = Date.now();
     localStorage.setItem("lastSubmit", now.toString());
     setSubmitted(true);
 
-    emailjs
-      .sendForm("service_dh2b4l6", "template_60b33vo", form.current!, {
-        publicKey: "b4eCQccMZwYwhbeSG",
-      })
-      .then(() => {
-        localStorage.setItem("lastSubmit", now.toString());
-        console.log("SUCCESS!");
-      })
-      .catch((error) => {
-        console.log("FAILED...", error.text);
-      });
+    const res = await fetch("/api/submit-dish", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+
+    const result = await res.json();
+
+    if (!res.ok) {
+      console.error("Error:", result.error);
+      return;
+    }
+
+    console.log("Dish submitted:", result);
   };
 
   return (
-    <div className="max-w-4xl mx-auto p-4">
+    <div className="max-w-4xl mx-auto p-4 min-h-[70vh]">
       <h1 className="text-2xl font-bold mb-4">Suggest your favourite dish!</h1>
       <p className="mb-4 text-gray-600 italic">
         You are only allowed to suggest one dish per day due to email traffic

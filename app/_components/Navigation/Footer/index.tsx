@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-secondary text-white py-10 px-6 md:px-16 mt-16">
+    <footer className="bg-secondary text-white py-10 px-6 md:px-16">
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
         {/* Brand */}
         <div>
@@ -66,7 +66,8 @@ export default function Footer() {
             <p>world.info.cuisine@gmail.com</p>
           </div>
           <p className="mt-6 text-sm text-white/60">
-            &copy; {new Date().getFullYear()} World Dishes. All rights reserved.
+            &copy; {new Date().getFullYear()} Dishes Around The World. All
+            rights reserved.
           </p>
         </div>
       </div>
