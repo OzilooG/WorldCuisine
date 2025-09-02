@@ -19,7 +19,7 @@ const SaveDishButton: React.FC<SaveDishButtonProps> = ({ dishId }) => {
   }, [dishId]);
 
   const handleSave = () => {
-    Cookies.set(`savedDish_${dishId}`, "true");
+    Cookies.set(`savedDish_${dishId}`, "true", { expires: 365 });
     setIsSaved(true);
   };
 
