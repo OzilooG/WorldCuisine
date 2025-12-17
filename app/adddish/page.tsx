@@ -128,8 +128,8 @@ export default function FormPage() {
     <div className="max-w-4xl mx-auto p-4 min-h-[70vh]">
       <h1 className="text-2xl font-bold mb-4">Suggest your favourite dish!</h1>
       <p className="mb-4 text-gray-600 italic">
-        You are only allowed to suggest one dish per day due to email traffic
-        reasons. Thank you for understanding.
+        You are only allowed to suggest one dish per day due to traffic reasons.
+        Thank you for understanding.
       </p>
 
       {!submitted ? (
@@ -139,15 +139,41 @@ export default function FormPage() {
           className="grid grid-cols-1 md:grid-cols-2 gap-4"
         >
           {/* Text/textarea fields */}
-          <input
-            key="local_name"
-            name="local_name"
-            value={formData.local_name}
-            onChange={handleChange}
-            placeholder="Local name"
-            className="border p-2 rounded col-span-2"
-            required
-          />
+          <div className="border-primary border-2 rounded p-2 col-span-2 flex flex-col gap-3">
+            <h2 className="text-xl font-bold text-primary">Required fields</h2>
+            <input
+              key="local_name"
+              name="local_name"
+              value={formData.local_name}
+              onChange={handleChange}
+              placeholder="Local name"
+              className="border p-2 rounded"
+              required
+            />
+            {/* Country dropdown */}
+            <Select
+              required
+              isMulti
+              options={countryOptions}
+              value={selectedCountries}
+              placeholder={"Countries... (can select multiple)"}
+              className="basic-multi-select col-span-2"
+              classNamePrefix="select"
+              onChange={(selected) => {
+                const selectedArray = Array.isArray(selected) ? selected : [];
+                setSelectedCountries(selectedArray);
+
+                setFormData((prev) => ({
+                  ...prev,
+                  country_code: selectedArray.map((item) => item.value),
+                  countries: selectedArray.map((item) => item.label),
+                }));
+              }}
+            />
+          </div>
+
+          <h2 className="col-span-2 text-xl italic">Optional fields</h2>
+
           <Select
             isMulti
             placeholder={"Time Of Day"}
@@ -261,27 +287,6 @@ export default function FormPage() {
               />
             )
           )}
-
-          {/* Country dropdown */}
-          <Select
-            required
-            isMulti
-            options={countryOptions}
-            value={selectedCountries}
-            placeholder={"Countries... (can select multiple)"}
-            className="basic-multi-select col-span-2"
-            classNamePrefix="select"
-            onChange={(selected) => {
-              const selectedArray = Array.isArray(selected) ? selected : [];
-              setSelectedCountries(selectedArray);
-
-              setFormData((prev) => ({
-                ...prev,
-                country_code: selectedArray.map((item) => item.value),
-                countries: selectedArray.map((item) => item.label),
-              }));
-            }}
-          />
 
           {/* Hidden inputs for EmailJS */}
           <input
